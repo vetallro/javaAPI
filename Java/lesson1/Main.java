@@ -1,11 +1,11 @@
-package Java.Lesson1;
+package Java.lesson1;
 
-import Java.Lesson1.HW.Task1;
-import Java.Lesson1.HW.Task2;
-import Java.Lesson1.HW.Task3;
-import Java.Lesson1.HW.Task4;
+import Java.lesson1.hw.Task1;
+import Java.lesson1.hw.Task2;
+import Java.lesson1.hw.Task3;
+import Java.lesson1.hw.Task4;
 
-import java.util.Random;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -31,7 +31,6 @@ public class Main {
         System.out.print("Input B number: ");
         int bNumber = in.nextInt();
         System.out.println("Answer: " + Task4.calculator(aNumber, bNumber, operation));
+        System.out.println("args = " + Arrays.toString(args));
     }
-
-
 }

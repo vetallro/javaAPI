@@ -1,4 +1,4 @@
-package Java.Lesson1.HW;
+package Java.lesson1.hw;
 
 public class Task3 {
     public static void writePrimeNumbers() {

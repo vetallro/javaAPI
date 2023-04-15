@@ -1,4 +1,4 @@
-package Java.Lesson1.HW;
+package Java.lesson1.hw;
 
 public class Task4 {
     public static float calculator(int a, int b, int operation) {

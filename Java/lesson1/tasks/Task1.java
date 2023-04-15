@@ -1,7 +1,6 @@
-package Java.Lesson1.Tasks;
+package Java.lesson1.tasks;
 
 import java.time.LocalDateTime;
-import java.util.Random;
 
 public class Task1 {
     public static void run() {
