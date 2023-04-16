@@ -1,17 +1,23 @@
 package Java.lesson2.hw;
 
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 public class Task2 {
 
     public static String parseJson (String json) {
         StringBuilder builder = new StringBuilder();
-         jsonArray = new (json);
+        JSONArray jsonArray = new JSONArray(json);
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject jsonObject = jsonArray.getJSONObject(i);
+            String soname = jsonObject.getString("фамилия");
+            String grade = jsonObject.getString("оценка");
+            String lesson = jsonObject.getString("предмет");
 
-
-        builder.append("Студент ").append(фамилия).append(" получил ").append(оценка)
-                .append(" по предмету ").append(предмет).append(".\n");
-
-
+            builder.append("Студент ").append(soname).append(" получил ").append(grade)
+                    .append(" по предмету ").append(lesson).append(".\n");
+        }
         return builder.toString();
     }
 
